@@ -28,17 +28,17 @@ The game world is a 2D top-down map divided into zones, each representing a key 
 ### 4. Education Zone (The Schoolhouse)
 - **Focus**: Schools, libraries, adult education  
 - **Project Examples**: School roof repair, library expansion  
-- **Mini-Game**: Trivia quiz on education stats and needs
+- **Mini-Game**: Trivia quiz on education stats and needs, With the closure of many schools in small towns due to consolidation, conversion of the closed school to a community center.
 
 ### 5. Parks & Recreation Zone (The Great Forest)
 - **Focus**: Trails, playgrounds, community centers  
 - **Project Examples**: Trail extension, park revitalization  
-- **Mini-Game**: Design a park layout with drag-and-drop elements
+- **Mini-Game**: Design a park layout with drag-and-drop elements, Development of skateparks.
 
 ### 6. Downtown & Economic Development Zone (The Square)
 - **Focus**: Small business support, zoning, housing  
 - **Project Examples**: Façade improvement grants, mixed-use zoning  
-- **Mini-Game**: Balance commercial/residential development puzzle
+- **Mini-Game**: Balance commercial/residential development puzzle, Electrification of town buildings
 
 ---
 
