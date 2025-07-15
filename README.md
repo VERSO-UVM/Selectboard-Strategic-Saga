@@ -4,6 +4,7 @@
 
 Players, acting as town selectboard members, explore a stylized version of their town to collect, prioritize, and timeline infrastructure and community development projects. The game simulates real-world planning challenges, including budget constraints and unexpected events.
 
+What is a succeful run of the game: budget is in the green, citizen happiness/impact (how do we measure that, do the users set that value or do we?), distribution of work, user scorer of effort for a project (overcommitment by month? Quarter?)
 ---
 
 ## Game World Structure
@@ -13,32 +14,26 @@ The game world is a 2D top-down map divided into zones, each representing a key 
 ### 1. Transportation Zone (The Roadhouse)
 - **Focus**: Roads, bridges, sidewalks, public transit  
 - **Project Examples**: Bridge repair, new bike lanes, road resurfacing  
-- **Mini-Game**: Navigate traffic congestion to reach a planning office
 
 ### 2. Water & Sewer Zone (The Pit)
 - **Focus**: Water treatment, stormwater, sewer lines  
 - **Project Examples**: Water main replacement, green infrastructure  
-- **Mini-Game**: Pipe-connection puzzle to simulate infrastructure flow
 
 ### 3. Public Safety Zone (The Citidel)
 - **Focus**: Fire, police, emergency response  
 - **Project Examples**: New fire station, emergency alert system  
-- **Mini-Game**: Time-based emergency response coordination
-  
+
 ### 4. Education Zone (The Schoolhouse)
 - **Focus**: Schools, libraries, adult education  
 - **Project Examples**: School roof repair, library expansion  
-- **Mini-Game**: Trivia quiz on education stats and needs, With the closure of many schools in small towns due to consolidation, conversion of the closed school to a community center.
 
 ### 5. Parks & Recreation Zone (The Great Forest)
 - **Focus**: Trails, playgrounds, community centers  
 - **Project Examples**: Trail extension, park revitalization  
-- **Mini-Game**: Design a park layout with drag-and-drop elements, Development of skateparks.
 
 ### 6. Downtown & Economic Development Zone (The Square)
 - **Focus**: Small business support, zoning, housing  
-- **Project Examples**: Façade improvement grants, mixed-use zoning  
-- **Mini-Game**: Balance commercial/residential development puzzle, Electrification of town buildings
+- **Project Examples**: Façade improvement grants, mixed-use zoning  on of town buildings
 
 ---
 
