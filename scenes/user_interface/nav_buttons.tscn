@@ -1,0 +1,105 @@
+[gd_scene load_steps=12 format=3 uid="uid://cdkrivmc1rldi"]
+
+[ext_resource type="Script" uid="uid://yvlltc6a2wj5" path="res://scripts/ReusableComponents/nav_buttons.gd" id="1_ofujd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0rby"]
+bg_color = Color(0.374139, 0.374139, 0.374139, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jp5bs"]
+bg_color = Color(0.772549, 0.772549, 0.772549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ylpsq"]
+bg_color = Color(0.372549, 0.372549, 0.372549, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g5pgo"]
+bg_color = Color(0.278431, 0.278431, 0.278431, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ofujd"]
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lqp8p"]
+bg_color = Color(0.372549, 0.372549, 0.372549, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpr60"]
+bg_color = Color(0.772951, 0.772951, 0.772951, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lkoaf"]
+bg_color = Color(0.372549, 0.372549, 0.372549, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rd3lw"]
+bg_color = Color(0.277528, 0.277528, 0.277528, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b1h46"]
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="navButtons" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ofujd")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(300, 250)
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_right = 15
+
+[node name="Button" type="Button" parent="MarginContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+focus_mode = 0
+theme_override_styles/focus = SubResource("StyleBoxFlat_c0rby")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_jp5bs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ylpsq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g5pgo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ofujd")
+text = "Back"
+
+[node name="Button2" type="Button" parent="MarginContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+focus_mode = 0
+theme_override_styles/focus = SubResource("StyleBoxFlat_lqp8p")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_bpr60")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lkoaf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rd3lw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b1h46")
+text = "Next"
+
+[connection signal="pressed" from="MarginContainer/Button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="MarginContainer/Button2" to="." method="_on_next_button_pressed"]

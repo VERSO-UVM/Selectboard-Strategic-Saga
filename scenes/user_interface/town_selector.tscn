@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0keposnx74oq"]
+
+[ext_resource type="Script" uid="uid://cpj1nqrot423n" path="res://scripts/town_selector.gd" id="1_3y0el"]
+[ext_resource type="PackedScene" uid="uid://bqg6ddmh7udor" path="res://scenes/user_interface/town_list_item_container.tscn" id="1_aqpq3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnia0"]
+
+[node name="ScrollContainer" type="ScrollContainer"]
+custom_minimum_size = Vector2(300, 360)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_bnia0")
+horizontal_scroll_mode = 0
+script = ExtResource("1_3y0el")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Town Info" parent="VBoxContainer" instance=ExtResource("1_aqpq3")]
+layout_mode = 2
+
+[node name="Town Info2" parent="VBoxContainer" instance=ExtResource("1_aqpq3")]
+layout_mode = 2
+
+[node name="Town Info3" parent="VBoxContainer" instance=ExtResource("1_aqpq3")]
+layout_mode = 2
+
+[node name="Town Info4" parent="VBoxContainer" instance=ExtResource("1_aqpq3")]
+layout_mode = 2
+
+[node name="Town Info5" parent="VBoxContainer" instance=ExtResource("1_aqpq3")]
+layout_mode = 2
+
+[node name="Town Info6" parent="VBoxContainer" instance=ExtResource("1_aqpq3")]
+layout_mode = 2
+
+[connection signal="town_selected" from="VBoxContainer/Town Info" to="." method="_on_town_info_town_selected"]

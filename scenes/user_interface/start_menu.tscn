@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd4uasudewt1g"]
+
+[ext_resource type="Theme" uid="uid://cm6w8dodtooff" path="res://assets/ui_components_theme.tres" id="1_x7pyx"]
+[ext_resource type="Script" uid="uid://dffspnm8unee5" path="res://scripts/StartMenu/start_menu.gd" id="2_4d1mi"]
+[ext_resource type="PackedScene" uid="uid://cdkrivmc1rldi" path="res://scenes/user_interface/nav_buttons.tscn" id="3_r4ucv"]
+[ext_resource type="PackedScene" uid="uid://c4vm34w3ytvo" path="res://scenes/user_interface/play_button.tscn" id="4_k1w15"]
+
+[node name="start_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+theme = ExtResource("1_x7pyx")
+script = ExtResource("2_4d1mi")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 187.0
+offset_bottom = 40.0
+mouse_filter = 2
+color = Color(0.957544, 0.859337, 0.840407, 1)
+
+[node name="menu_content" type="MarginContainer" parent="ColorRect"]
+custom_minimum_size = Vector2(300, 720)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+custom_minimum_size = Vector2(300, 360)
+layout_mode = 2
+offset_left = 810.0
+offset_top = 722.0
+offset_right = 1110.0
+offset_bottom = 1082.0
+size_flags_vertical = 8
+mouse_filter = 2
+
+[node name="navButtons" parent="ColorRect/MarginContainer" instance=ExtResource("3_r4ucv")]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="ColorRect"]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -150.0
+offset_right = 300.0
+offset_bottom = 150.0
+grow_vertical = 2
+
+[node name="play_button" parent="ColorRect/MarginContainer2" instance=ExtResource("4_k1w15")]
+layout_mode = 2
+
+[connection signal="page_change" from="ColorRect/MarginContainer/navButtons" to="." method="_on_nav_buttons_page_change"]

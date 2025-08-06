@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://q0quead5bsf8"]
+
+[node name="MarginContainer" type="MarginContainer"]
+custom_minimum_size = Vector2(500, 0)
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_right = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="headingMarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(300, 360)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="headingMarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="headingMarginContainer/VBoxContainer"]
+visible = false
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/normal_font_size = 35
+text = "Select your budget timeline"
+horizontal_alignment = 1
+
+[node name="mainContentMarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(300, 360)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 0
+
+[node name="startGreeting" type="ColorRect" parent="mainContentMarginContainer"]
+layout_mode = 2
+mouse_filter = 1
+color = Color(0.956863, 0.858824, 0.839216, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="mainContentMarginContainer/startGreeting"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(300, 360)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -180.0
+offset_right = 150.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 22
+text = "Welcome to the Strategic Town Planner game! This game is designed to prompt discussion around real-world planning challenges, dealing with budget constraints and unexpected events, and strengthen the long-term outlook for select boards!"
+horizontal_alignment = 1
+vertical_alignment = 1
