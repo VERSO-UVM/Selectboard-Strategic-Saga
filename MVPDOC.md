@@ -32,7 +32,8 @@ Each quest will have the following attributes:
 
 ## Wireframes
 Game starting menu
-
+![Town Selector Menu](/MVPDOC-assets/town-selector.png)
+![Budget Timeline Selector Menu](/MVPDOC-assets/budget-timeline-selector.png)
 Quest creation popup
 
 Town layout
