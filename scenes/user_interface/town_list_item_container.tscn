@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bqg6ddmh7udor"]
 
-[ext_resource type="Script" uid="uid://cw8t688omtn2r" path="res://scripts/StartMenu/town_list_item_container.gd" id="1_ghets"]
+[ext_resource type="Script" uid="uid://cw8t688omtn2r" path="res://scripts/start_menu/town_list_item_container.gd" id="1_ghets"]
 [ext_resource type="Texture2D" uid="uid://bwngap41m0gfr" path="res://assets/town_icon.png" id="2_c50sh"]
 [ext_resource type="Texture2D" uid="uid://2vy81p1cutqq" path="res://assets/population_icon.png" id="3_vf0xb"]
 
@@ -54,7 +54,7 @@ offset_bottom = 40.0
 layout_mode = 2
 texture = ExtResource("2_c50sh")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Button/HBoxContainer"]
+[node name="town_name" type="RichTextLabel" parent="Button/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 2

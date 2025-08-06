@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://cdkrivmc1rldi"]
 
-[ext_resource type="Script" uid="uid://yvlltc6a2wj5" path="res://scripts/ReusableComponents/nav_buttons.gd" id="1_ofujd"]
+[ext_resource type="Script" uid="uid://yvlltc6a2wj5" path="res://scripts/reusable_ components/nav_buttons.gd" id="1_ofujd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0rby"]
 bg_color = Color(0.374139, 0.374139, 0.374139, 1)

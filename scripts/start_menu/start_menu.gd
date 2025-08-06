@@ -23,6 +23,7 @@ func _ready() -> void:
 	nav_buttons.cur_page = STARTING_PAGE
 	play_button.get_child(0).get_child(0).disabled = true
 	play_button.visible = false
+	EventBus.play_game.connect(_on_play_button_pressed)
 	
 	if nav_buttons.cur_page == 0:
 		menu_content.add_child(welcome_scene.instantiate())
@@ -69,3 +70,7 @@ func _update_timeline_choice(years) -> void:
 	print(years)
 	budget_timeline_selection = years
 	pass
+	
+func _on_play_button_pressed() -> void:
+	print("Town chosen: " + town_selection)
+	print("Budget timeline chosen: " + str(budget_timeline_selection) + " years")

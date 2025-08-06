@@ -12,8 +12,11 @@ script = ExtResource("1_cigb1")
 layout_mode = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
-custom_minimum_size = Vector2(300, 50)
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
+theme_override_font_sizes/normal_font_size = 28
 text = "Plan your budget for: 0 years"
 horizontal_alignment = 1
 

@@ -7,8 +7,14 @@ extends Node
 # When a town is selected from the town selector scrollable box
 signal set_town_selection(name)
 
+# TODO: restore_town_selection(id) with some unique id to 
+# TODO: focus the chosen container in the selector list
+
 # When the budget timeline value is selected from hslider
 signal set_budget_timeline(years: int)
 
 # Establish selected values
 signal restore_budget_timeline(years: int)
+
+# When play button is pressed
+signal play_game()

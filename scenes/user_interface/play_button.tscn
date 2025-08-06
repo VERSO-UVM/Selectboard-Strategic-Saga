@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://c4vm34w3ytvo"]
+[gd_scene load_steps=2 format=3 uid="uid://c4vm34w3ytvo"]
+
+[ext_resource type="Script" uid="uid://tcjwqqe3k2lk" path="res://scripts/start_menu/play_button.gd" id="1_k7i6g"]
 
 [node name="play_button" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_k7i6g")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 custom_minimum_size = Vector2(500, 300)
@@ -25,3 +28,5 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 focus_mode = 0
 text = "Play"
+
+[connection signal="pressed" from="MarginContainer/Button" to="." method="_on_play_button_pressed"]
