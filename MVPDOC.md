@@ -31,8 +31,12 @@ Each quest will have the following attributes:
 - Available Funding
 
 ## Wireframes
-Game starting menu
+Game starting menu  
+
+# Town Selector Menu
 ![Town Selector Menu](/MVPDOC-assets/town-selector.png)
+
+# Budget Timeline Selector Menu
 ![Budget Timeline Selector Menu](/MVPDOC-assets/budget-timeline-selector.png)  
 
 Quest creation popup
