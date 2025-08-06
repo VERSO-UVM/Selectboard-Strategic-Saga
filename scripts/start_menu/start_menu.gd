@@ -12,9 +12,9 @@ var town_selection
 var budget_timeline_selection
 
 # Scene paths
-var welcome_scene = load("res://scenes/user_interface/menu_welcome_screen.tscn")
-var town_selector_scene = load("res://scenes/user_interface/menu_town_selector.tscn")
-var budget_timeline_scene = load("res://scenes/user_interface/menu_budget_timeline_selector.tscn")
+var welcome_scene = load("res://scenes/user_interface/start_menu/menu_welcome_screen.tscn")
+var town_selector_scene = load("res://scenes/user_interface/start_menu/menu_town_selector.tscn")
+var budget_timeline_scene = load("res://scenes/user_interface/start_menu/menu_budget_timeline_selector.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

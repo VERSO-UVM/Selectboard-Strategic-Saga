@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dywsptkf1nxpv"]
+[gd_scene load_steps=2 format=3 uid="uid://dhj0xfabyyaxo"]
 
-[ext_resource type="PackedScene" uid="uid://d0keposnx74oq" path="res://scenes/user_interface/town_selector.tscn" id="1_2qw2l"]
+[ext_resource type="PackedScene" uid="uid://dye801lpewutn" path="res://scenes/user_interface/start_menu/budget_timeline_selector.tscn" id="1_i7wss"]
 
 [node name="MarginContainer" type="MarginContainer"]
 custom_minimum_size = Vector2(500, 0)
@@ -12,25 +12,29 @@ offset_left = -150.0
 offset_right = 150.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="headingMarginContainer" type="MarginContainer" parent="."]
 custom_minimum_size = Vector2(300, 360)
 layout_mode = 2
 size_flags_vertical = 0
+mouse_filter = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="headingMarginContainer"]
 layout_mode = 2
 size_flags_vertical = 8
+mouse_filter = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="headingMarginContainer/VBoxContainer"]
+[node name="RichTextLabel2" type="RichTextLabel" parent="headingMarginContainer/VBoxContainer"]
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
-custom_minimum_size = Vector2(300, 50)
+custom_minimum_size = Vector2(300, 150)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 35
-text = "Select your town"
+text = "Select your budget timeline"
 horizontal_alignment = 1
 
 [node name="mainContentMarginContainer" type="MarginContainer" parent="."]
@@ -38,8 +42,15 @@ custom_minimum_size = Vector2(300, 360)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-mouse_filter = 0
+mouse_filter = 2
 
-[node name="townSelector" parent="mainContentMarginContainer" instance=ExtResource("1_2qw2l")]
+[node name="budget_timeline" type="ColorRect" parent="mainContentMarginContainer"]
 layout_mode = 2
-mouse_filter = 0
+mouse_filter = 2
+color = Color(0.956863, 0.858824, 0.839216, 1)
+
+[node name="budget_timeline_selector" parent="mainContentMarginContainer/budget_timeline" instance=ExtResource("1_i7wss")]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 360.0
+mouse_filter = 2

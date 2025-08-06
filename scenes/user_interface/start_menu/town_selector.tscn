@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d0keposnx74oq"]
 
 [ext_resource type="Script" uid="uid://cpj1nqrot423n" path="res://scripts/town_selector.gd" id="1_3y0el"]
-[ext_resource type="PackedScene" uid="uid://bqg6ddmh7udor" path="res://scenes/user_interface/town_list_item_container.tscn" id="1_aqpq3"]
+[ext_resource type="PackedScene" uid="uid://bqg6ddmh7udor" path="res://scenes/user_interface/start_menu/town_list_item_container.tscn" id="1_aqpq3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnia0"]
 

@@ -14,7 +14,7 @@ var new_town
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	for i in towns.size():
-		new_town = load("res://scenes/user_interface/town_list_item_container.tscn").instantiate()
+		new_town = load("res://scenes/user_interface/start_menu/town_list_item_container.tscn").instantiate()
 		towns_container.add_child(new_town)
 		# Set text value after it has loaded into tree (not sure why this needs to be in this order?)
 		towns_container.get_child(i)._set_text(towns[i])
