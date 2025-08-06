@@ -44,7 +44,7 @@ A note: The color schemes, button styling, fonts, font sizes, etc. can all be ch
 
 ### Budget Timeline Selector Menu
 ![Budget Timeline Selector Menu](/MVPDOC-assets/budget-timeline-selector.png)  
-This selector determines how many years they want the game to run the budget for. Just like the other components, this is just one possibility. We could do a text field where they simply type it in. The value displayed dynamically updates as the user scrolls along the slider. It has a max of 10 years. 
+- This selector determines how many years they want the game to run the budget for. Just like the other components, this is just one possibility. We could do a text field where they simply type it in. The value displayed dynamically updates as the user scrolls along the slider. It has a max of 10 years. 
 
  
 Quest creation popup
