@@ -31,14 +31,22 @@ Each quest will have the following attributes:
 - Available Funding
 
 ## Wireframes
-Game starting menu  
+A note: The color schemes, button styling, fonts, font sizes, etc. can all be changed. We can ensure it meets accessibility standards and has a pleasing overall style. These wireframes are meant to get the basic idea of the user interface flow for the game.
 
-# Town Selector Menu
+
+## Game starting menu  
+
+### Town Selector Menu
 ![Town Selector Menu](/MVPDOC-assets/town-selector.png)
+- This is the first menu the user is presented with after reading the description of the game. It is where they will choose which town they are planning to budget for.
+- Additional necessary information for each town can be added. If there is a yearly budget, number of select board members, priority level of any kind, etc., this can be modified to display that when you initially choose your town to simulate budget planning for.
 
-# Budget Timeline Selector Menu
+
+### Budget Timeline Selector Menu
 ![Budget Timeline Selector Menu](/MVPDOC-assets/budget-timeline-selector.png)  
+This selector determines how many years they want the game to run the budget for. Just like the other components, this is just one possibility. We could do a text field where they simply type it in. The value displayed dynamically updates as the user scrolls along the slider. It has a max of 10 years. 
 
+ 
 Quest creation popup
 
 Town layout
