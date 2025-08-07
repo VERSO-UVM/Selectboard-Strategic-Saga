@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cds5rtb0812ag"]
 
-[ext_resource type="Script" uid="uid://dq83eun0nq4je" path="res://scripts/reusable_ components/info_description.gd" id="1_sqdk4"]
+[ext_resource type="Script" uid="uid://dq83eun0nq4je" path="res://scripts/reusable_components/info_description.gd" id="1_sqdk4"]
 
 [node name="info_description" type="Control"]
 z_index = 10

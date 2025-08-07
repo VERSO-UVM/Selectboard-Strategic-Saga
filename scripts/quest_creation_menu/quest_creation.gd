@@ -32,6 +32,9 @@ func _disable_all_mouse_interaction(node) -> void:
 			_disable_all_mouse_interaction(child)
 	if node is TextEdit or node is SpinBox:
 		node.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		# Special case for SpinBox with nested LineEdit node
+		if node is SpinBox:
+			node.get_line_edit().mouse_filter = Control.MOUSE_FILTER_IGNORE
 		
 func _enable_all_mouse_interaction(node) -> void:
 	if node.get_children():
@@ -39,3 +42,6 @@ func _enable_all_mouse_interaction(node) -> void:
 			_enable_all_mouse_interaction(child)
 	if node is TextEdit or node is SpinBox:
 		node.mouse_filter = Control.MOUSE_FILTER_STOP
+		# Special case for SpinBox with nested LineEdit node
+		if node is SpinBox:
+			node.get_line_edit().mouse_filter = Control.MOUSE_FILTER_STOP

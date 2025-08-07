@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cm6w8dodtooff"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cm6w8dodtooff"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42t7j"]
 bg_color = Color(0.654902, 0.329412, 0.141176, 1)
@@ -9,6 +9,9 @@ bg_color = Color(0.486275, 0.298039, 0.188235, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juwi5"]
 bg_color = Color(0.819608, 0.321569, 0.0392157, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k1fnr"]
+bg_color = Color(0.396078, 0.396078, 0.396078, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6mec"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0g058"]
@@ -18,6 +21,7 @@ bg_color = Color(0.396889, 0.396889, 0.396889, 1)
 Button/styles/focus = SubResource("StyleBoxFlat_42t7j")
 Button/styles/hover = SubResource("StyleBoxFlat_35n3r")
 Button/styles/normal = SubResource("StyleBoxFlat_juwi5")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_k1fnr")
 RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
 SpinBox/styles/field_and_buttons_separator = SubResource("StyleBoxFlat_h6mec")
 TextEdit/styles/normal = SubResource("StyleBoxFlat_0g058")

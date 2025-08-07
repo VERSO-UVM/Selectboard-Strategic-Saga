@@ -149,6 +149,7 @@ autowrap_mode = 0
 
 [node name="info_icon" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer3" instance=ExtResource("2_kvhwr")]
 layout_mode = 2
+description = "This value represents how important it is to the town that this quest gets completed in a timely manner."
 
 [node name="SpinBox2" type="SpinBox" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 layout_mode = 2
