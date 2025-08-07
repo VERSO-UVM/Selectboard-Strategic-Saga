@@ -1,9 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dnvpg0inkw4db"]
 
 [ext_resource type="Theme" uid="uid://cm6w8dodtooff" path="res://assets/ui_components_theme.tres" id="1_faapw"]
+[ext_resource type="Script" uid="uid://c5n8pschjm1oo" path="res://scripts/quest_creation_menu/quest_creation.gd" id="2_etgp7"]
 [ext_resource type="PackedScene" uid="uid://6r5q2tiyqs15" path="res://scenes/user_interface/info_icon.tscn" id="2_kvhwr"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kvhwr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jnkoh"]
 
@@ -17,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_faapw")
+script = ExtResource("2_etgp7")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
@@ -99,26 +99,36 @@ placeholder_text = "Bridge Repair"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 layout_mode = 2
+theme_override_constants/separation = 15
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer"]
-custom_minimum_size = Vector2(150, 25)
+custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 text = "Quest Description"
+fit_content = true
+autowrap_mode = 0
 
 [node name="info_icon" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer" instance=ExtResource("2_kvhwr")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxEmpty_kvhwr")
-description = "Write a brief description detailing the project."
+description = "Write a short description detailing the key information necessary to understand this quest."
 
 [node name="TextEdit2" type="TextEdit" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 custom_minimum_size = Vector2(150, 250)
 layout_mode = 2
 placeholder_text = "description"
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
-custom_minimum_size = Vector2(0, 25)
+[node name="HBoxContainer2" type="HBoxContainer" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer2"]
 layout_mode = 2
 text = "Impact Score"
+fit_content = true
+autowrap_mode = 0
+
+[node name="info_icon" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer2" instance=ExtResource("2_kvhwr")]
+layout_mode = 2
 
 [node name="SpinBox" type="SpinBox" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 layout_mode = 2
@@ -126,10 +136,19 @@ theme_override_styles/down_background = SubResource("StyleBoxFlat_jnkoh")
 theme_override_styles/up_background = SubResource("StyleBoxFlat_faapw")
 max_value = 10.0
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer3"]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 text = "Urgency Score"
+fit_content = true
+autowrap_mode = 0
+
+[node name="info_icon" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer3" instance=ExtResource("2_kvhwr")]
+layout_mode = 2
 
 [node name="SpinBox2" type="SpinBox" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 layout_mode = 2
@@ -137,31 +156,61 @@ theme_override_styles/down_background = SubResource("StyleBoxFlat_jnkoh")
 theme_override_styles/up_background = SubResource("StyleBoxFlat_faapw")
 max_value = 10.0
 
-[node name="RichTextLabel5" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer4"]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 text = "Dependencies"
+fit_content = true
+autowrap_mode = 0
+
+[node name="info_icon" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer4" instance=ExtResource("2_kvhwr")]
+layout_mode = 2
+description = "List all the other quests that must be completed in order for this quest to be possible."
 
 [node name="TextEdit3" type="TextEdit" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 placeholder_text = "Road Paving"
 
-[node name="RichTextLabel6" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+[node name="HBoxContainer5" type="HBoxContainer" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer5"]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 text = "State/Federal Mandates
 "
+fit_content = true
+autowrap_mode = 0
+
+[node name="info_icon" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer5" instance=ExtResource("2_kvhwr")]
+layout_mode = 2
+description = "Is there an existing requirement for the product of this quest at the State/Federal level?"
 
 [node name="TextEdit4" type="TextEdit" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 placeholder_text = "All towns need this by xyz"
 
-[node name="RichTextLabel7" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+[node name="HBoxContainer6" type="HBoxContainer" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer6"]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 text = "Funding"
+fit_content = true
+autowrap_mode = 0
+
+[node name="info_icon" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form/HBoxContainer6" instance=ExtResource("2_kvhwr")]
+layout_mode = 2
+description = "What money is available to fund this quest?"
 
 [node name="TextEdit5" type="TextEdit" parent="ColorRect/quest_creation_content/VBoxContainer/body_container/HBoxContainer/ScrollContainer/MarginContainer/quest_form"]
 custom_minimum_size = Vector2(150, 150)

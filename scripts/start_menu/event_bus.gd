@@ -18,3 +18,9 @@ signal restore_budget_timeline(years: int)
 
 # When play button is pressed
 signal play_game()
+
+# Disalbing background scrolling
+signal stop_background_scroll()
+
+# Enabling background scrolling
+signal start_background_scroll()
