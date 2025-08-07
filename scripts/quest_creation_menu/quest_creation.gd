@@ -36,6 +36,6 @@ func _disable_all_mouse_interaction(node) -> void:
 func _enable_all_mouse_interaction(node) -> void:
 	if node.get_children():
 		for child in node.get_children():
-			_disable_all_mouse_interaction(child)
+			_enable_all_mouse_interaction(child)
 	if node is TextEdit or node is SpinBox:
 		node.mouse_filter = Control.MOUSE_FILTER_STOP
